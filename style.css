@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 5px;
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/background.png);
+  background-image: url(images/wallpaperflare.com_wallpaper.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -143,14 +143,25 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
   color: #ff004f;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .tab-contents {
   display: none;
+  font-size: 16px;
 }
 
 .tab-contents.active-tab {
+  display: block;
+}
+
+.tab-contents b{
+  color: #ff004f;
+  font-size: 18px;
+}
+
+.tab-contents{
+  align-items: center;
   display: block;
 }
 
@@ -286,6 +297,79 @@ nav ul li a:hover::after {
   background: #ff004f;
 }
 
+
+#education.timeline {
+  margin-bottom: 30px;
+}
+
+#education .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+#education .timeline-list {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+
+#education .timeline-item {
+  position: relative;
+}
+
+#education .timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#education .timeline-item-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+#education .timeline-list span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+
+#education .timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--jet);
+}
+
+#education .timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+
+#education .timeline-text {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
 /* ---------------Contact--------------------------- */
 
 .contact-left {
@@ -325,7 +409,6 @@ nav ul li a:hover::after {
 }
 
 .btn.btn2 {
-  display: inline;
   background: #ff004f;
 }
 
@@ -437,4 +520,9 @@ nav .fas {
   .copyright{
     font-size: 14px;
   }
+}
+
+
+.logo.f{
+  color: #ff004f;
 }

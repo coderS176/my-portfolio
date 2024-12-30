@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam's Portfolio</title>
+    <title>Shivam Gupta - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ea7f90b44c.js" crossorigin="anonymous"></script>
 </head>
@@ -12,38 +12,38 @@
 <body>
     <div id="header">
         <div class="container">
-            <nav><img src="images/logo.png" class="logo">
+            <nav>
+                <!-- I want code icon from font awesome inplace of logo -->
+                <i class="fa-solid fa-code"></i>
                 <ul id="sidemenu">
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Services</a></li>
-                    <li> <a href="#">Projects</a></li>
-                    <li> <a href="#">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span> Shivam Gupta </span> <br> A Coder and Memer!</h1>
+                <p>Software Developer & Blockchain Enthusiast</p>
+                <h1>Hi, I'm <span>Shivam Gupta</span><br>Passionate about Building Scalable Solutions!</h1>
             </div>
         </div>
     </div>
+
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/user1bg.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odio ullam, amet totam commodi
-                        deserunt distinctio laboriosam veritatis exercitationem labore mollitia fugit est impedit minus
-                        consectetur earum tenetur modi eaque maxime officiis doloribus. Voluptate delectus illum ad
-                        asperiores incidunt eveniet possimus suscipit doloribus sit voluptatibus quidem voluptatem natus
-                        voluptas exercitationem dicta dolorum atque sed corrupti distinctio vero veritatis, pariatur
-                        ullam eligendi mollitia. Quis, doloribus eos.
-                    </p>
+                    <p>I am Shivam Gupta, a Master's student at MANIT Bhopal, with expertise in backend development,
+                        Android applications, and blockchain technology. I am passionate about solving real-world
+                        problems through technology and have experience in multiple frameworks and tools.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -51,159 +51,254 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br> Building Websites</li>
-                            <li><span>App Development</span><br> Designing Web/Android/ios apps</li>
+                            <li>
+                                <span><i class="fa-brands fa-java"></i></span>
+                                <b>Backend Development:</b>
+                                <i class="fa-brands fa-java"></i> Java,
+                                <i class="fa-solid fa-leaf"></i> Spring Boot,
+                                <i class="fa-brands fa-python"></i> Django,
+                                <i class="fa-brands fa-node"></i> Node.js,
+                                <i class="fa-solid fa-database"></i> JPA, Hibernate,
+                                <i class="fa-solid fa-shield-halved"></i> Spring Security,
+                                <i class="fa-solid fa-vial"></i> JUnit,
+                                <i class="fa-cloud"></i> Spring Cloud,
+                                <i class="fa-solid fa-cubes"></i> Microservices,
+                                <i class="fa-solid fa-code"></i> J2EE
+                            </li>
+                            <li>
+                                <span><i class="fa-brands fa-android"></i></span>
+                                <b>Mobile App Development:</b>
+                                <i class="fa-brands fa-android"></i> Android SDK,
+                                <i class="fa-brands fa-java"></i> Java,
+                                <i class="fa-solid fa-database"></i> Firebase
+                            </li>
+                            <li>
+                                <span><i class="fa-brands fa-ethereum"></i></span>
+                                <b>Blockchain:</b>
+                                <i class="fa-brands fa-ethereum"></i> Ethereum,
+                                <i class="fa-solid fa-file-code"></i> Solidity,
+                                <i class="fa-solid fa-wallet"></i> MetaMask
+                            </li>
+                            <li>
+                                <span><i class="fa-brands fa-html5"></i></span>
+                                <b>Frontend Development:</b>
+                                <i class="fa-brands fa-html5"></i> HTML,
+                                <i class="fa-brands fa-css3-alt"></i> CSS
+                            </li>
+                            <li>
+                                <span><i class="fa-brands fa-aws"></i></span>
+                                <b>DevOps:</b>
+                                <i class="fa-brands fa-aws"></i> AWS,
+                                <i class="fa-brands fa-docker"></i> Docker,
+                                <i class="fa-solid fa-arrows-rotate"></i> CI/CD,
+                                <i class="fa-brands fa-github"></i> GitHub Actions,
+                                <i class="fa-brands fa-git-alt"></i> Git,
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-database"></i></span>
+                                <b>Databases:</b>
+                                <i class="fa-solid fa-database"></i> MySQL,
+                                <i class="fa-brands fa-envira"></i> MongoDB,
+                                <i class="fa-solid fa-server"></i> HBase,
+                                <i class="fa-solid fa-database"></i> PostgreSQL
+                            </li>
+                            <li>
+                                <span><i class="fa-solid fa-vial"></i></span>
+                                <b>Testing & Automation:</b>
+                                <i class="fa-solid fa-vial"></i> Selenium,
+                                <i class="fa-solid fa-paper-plane"></i> Postman,
+                                <i class="fa-solid fa-code"></i> REST,
+                                <i class="fa-solid fa-cogs"></i> SOAP
+                            </li>
+                            <li>
+                                <span><i class="fa-brands fa-linux"></i></span>
+                                <b>Core CS Concepts:</b>
+                                <i class="fa-solid fa-database"></i> Data Structures & Algorithms,
+                                <i class="fa-solid fa-desktop"></i> Operating Systems,
+                                <i class="fa-solid fa-network-wired"></i> Networking,
+                                <i class="fa-brands fa-linux"></i> Linux,
+                                <i class="fa-solid fa-database"></i> DBMS
+                            </li>
                         </ul>
                     </div>
+
+
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br> Building Websites</li>
-                            <li><span>App Development</span><br> Designing Web/Android/ios apps</li>
+                            <li>
+                                <span>🚀 Smart India Hackathon 2023 (Sep 2023 – Dec 2023)</span><br>
+                                Developed <b>Swadeshi Bazaar</b>, a platform aimed at empowering local sellers to market
+                                and sell their products internationally. Implemented robust backend systems and
+                                optimized workflows for scalability and efficiency.
+                            </li>
+                            <li>
+                                <span>🏆 Smart India Hackathon 2024 (Aug 2024 – Sep 2024)</span><br>
+                                Developed <b>Museum Booking System</b>, an innovative platform enabling seamless online
+                                ticket bookings and crowd management for museums. Focused on user-centric design and
+                                efficient backend architecture.
+                            </li>
+                            <li>
+                                <span>💻 CLC3 Project (Jan 2024 – Mar 2024)</span><br>
+                                Built a web scraping and data aggregation system integrating APIs and tools like
+                                Selenium and BeautifulSoup, deployed on AWS EC2 using Docker containers. Scheduled
+                                periodic scraping tasks using cron jobs and managed user-submission APIs efficiently.
+                            </li>
+                            <li>
+                                <span>📝 Reflections Journal</span><br>
+                                Built using <b>Spring Boot</b> and <b>MySQL</b>, this platform allows tech enthusiasts
+                                to securely write and store notes with customizable encryption and hashing techniques
+                                for enhanced privacy.
+                            </li>
+                            <li>
+                                <span>📱 Night Canteen H11 App</span><br>
+                                Developed an <b>Android application</b> with a <b>Firebase backend</b> to streamline
+                                night canteen operations. Enhanced user experience with real-time order tracking and
+                                preparation time estimation.
+                            </li>
                         </ul>
                     </div>
+
                     <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br> Building Websites</li>
-                            <li><span>App Development</span><br> Designing Web/Android/ios apps</li>
-                        </ul>
+                        <section class="timeline">
+                            <div class="title-wrapper">
+                                <div class="icon-box">
+                                    <ion-icon name="book-outline"></ion-icon>
+                                </div>
+                                <h3 class="h3">Education</h3>
+                            </div>
+
+                            <ol class="timeline-list">
+                                <li class="timeline-item">
+                                    <h4 class="h4 timeline-item-title">Master of Computer Applications (MCA), MANIT
+                                        Bhopal</h4>
+                                    <span>2022 — Present (Expected: June 2025)</span>
+                                    <span>CGPA: 7.93</span>
+                                    <p class="timeline-text">
+                                        Pursuing advanced studies in computer applications with a focus on backend
+                                        development, blockchain, and DevOps.
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <h4 class="h4 timeline-item-title">Bachelor of Computer Applications (BCA), Holkar
+                                        Science College, Indore</h4>
+                                    <span>2019 — 2022</span>
+                                    <span>CGPA: 6.99</span>
+                                    <p class="timeline-text">
+                                        Graduated with a strong foundation in programming, database management, and
+                                        software development.
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <h4 class="h4 timeline-item-title">Senior Secondary Education (12th), Naveen
+                                        Academny, Dinara
+                                    </h4>
+                                    <span>2016 — 2018</span>
+                                    <span>Percentage: 79.8</span>
+                                    <p class="timeline-text">
+                                        Specialized in science with a focus on computer applications.
+                                    </p>
+                                </li>
+
+                                <li class="timeline-item">
+                                    <h4 class="h4 timeline-item-title">Secondary Education (10th), Naveen Academy,
+                                        Dinara</h4>
+                                    <span>2014 — 2016</span>
+                                    <span>Percentage: 79.2</span>
+                                    <p class="timeline-text">
+                                        Completed foundational education with an emphasis on mathematics and science.
+                                    </p>
+                                </li>
+                            </ol>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--------------services --------------------------------->
+
+    <!-- Services Section -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fas fa-server"></i>
+                    <h2>Backend Development</h2>
+                    <p>Building scalable backend systems using Spring Boot and Django.</p>
                 </div>
                 <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Creating Android applications with Firebase integration.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Blockchain Design</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fas fa-cubes"></i>
+                    <h2>Blockchain Solutions</h2>
+                    <p>Developing decentralized applications on Ethereum.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!------------------------portfolio---------------------->
 
-    <div id="Portfolio">
+    <!-- Portfolio Section -->
+    <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title"> My Work </h1>
+            <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/work-1.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui asperiores aperiam adipisci
-                            non? Deserunt aspernatur blanditiis eius quasi ex. Quia?</p>
+                        <h3>Swadeshi Bazaar</h3>
+                        <p>Helping local sellers reach global markets through a digital platform.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-2.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui asperiores aperiam adipisci
-                            non? Deserunt aspernatur blanditiis eius quasi ex. Quia?</p>
+                        <h3>Reflections Journal</h3>
+                        <p>A secure journal application built with Spring Boot and MySQL.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-3.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui asperiores aperiam adipisci
-                            non? Deserunt aspernatur blanditiis eius quasi ex. Quia?</p>
+                        <h3>Night Canteen H11</h3>
+                        <p>Android app for seamless food order management.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
         </div>
     </div>
 
-    <!------------------------contact---------------------->
-    <div id="Contact">
+    <!-- Contact Section -->
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>1234567890</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    <p><i class="fas fa-paper-plane"></i>shivam.gupta@example.com</p>
+                    <p><i class="fas fa-phone"></i>+91 12345 67890</p>
+                    <a href="images/shivam-resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="c" placeholder="Your Message" required></textarea>
+                        <textarea name="Message" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Send</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright &copy; Shivam</p>
-        </div>
     </div>
 
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbziV_kzZZxRoWXKDrxx4NOJutdw4WbDCNgRDRlgyut9pmQhyu9aWhDeoVQxmm_srSA0/exec'
-        const form = document.forms['submit-to-google-sheet']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
